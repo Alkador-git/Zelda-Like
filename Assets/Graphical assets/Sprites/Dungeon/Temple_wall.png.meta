@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c35c74976c69deb43a3a92626b2915c5
+guid: 74423d835ab371547b310d9740f0584d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8345603682298202197
-    second: Temple_tile_0
+      213: 5551542718621090948
+    second: Temple_wall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temple_tile_0
+      name: Temple_wall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5588397055a81d370800000000000000
-      internalID: 8345603682298202197
+      spriteID: 48401d270ba0b0d40800000000000000
+      internalID: 5551542718621090948
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Temple_tile_0: 8345603682298202197
+      Temple_wall_0: 5551542718621090948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

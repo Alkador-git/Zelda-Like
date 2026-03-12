@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c37446b07faacc489fdbbf82d46b9d9
+guid: 470bb2cee99c50245a1220f87dd67dd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5963969392254682440
-    second: Zelda like chara dos_0
+      213: -5028390955775220757
+    second: Zelda like chara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zelda like chara dos_0
+      name: Zelda like chara_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84584a4509644c250800000000000000
-      internalID: 5963969392254682440
+      spriteID: be32b393111973ab0800000000000000
+      internalID: -5028390955775220757
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Zelda like chara dos_0: 5963969392254682440
+      Zelda like chara_0: -5028390955775220757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

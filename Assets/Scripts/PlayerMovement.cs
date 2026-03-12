@@ -3,24 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Réglages de déplacement")]
     public float moveSpeed = 5f;
-
-    [Header("Composants")]
     public Rigidbody2D rb;
-    public Animator animator;
+    public SpriteAnimator spriteAnimator; // Référence au nouveau script
 
     private Vector2 _movement;
-    private const float _inputThreshold = 0.1f;
-
-    [Header("Débogage")]
-    public bool debugMode = false;
+    private Vector2 _lastDirection = Vector2.down; // Regard vers le bas par défaut
 
     void Update()
     {
-        // Lecture des entrées avec le New Input System
         Vector2 rawInput = Vector2.zero;
-
         if (Keyboard.current != null)
         {
             if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed) rawInput.y += 1;
@@ -29,36 +21,42 @@ public class PlayerController : MonoBehaviour
             if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) rawInput.x += 1;
         }
 
-        // Normalisation pour éviter d'aller plus vite en diagonale
         _movement = rawInput.normalized;
+        UpdateAnimationState();
+    }
 
-        if (debugMode)
+    void UpdateAnimationState()
+    {
+        string stateName = "";
+
+        if (_movement.magnitude > 0.1f)
         {
-            Debug.Log($"[Input] Raw: {rawInput} | Normalized: {_movement} | Magnitude: {_movement.magnitude}");
-        }
-
-        // Mise à jour de l'Animator
-        if (_movement.magnitude > _inputThreshold)
-        {
-            animator.SetFloat("Horizontal", _movement.x);
-            animator.SetFloat("Vertical", _movement.y);
-            animator.SetFloat("Speed", 1f);
-
-            animator.SetFloat("LastHorizontal", _movement.x);
-            animator.SetFloat("LastVertical", _movement.y);
+            _lastDirection = _movement;
+            stateName = "Walk" + GetDirectionName(_movement);
         }
         else
         {
-            animator.SetFloat("Speed", 0f);
+            stateName = "Idle" + GetDirectionName(_lastDirection);
+        }
 
-            animator.SetFloat("Horizontal", 0f);
-            animator.SetFloat("Vertical", 0f);
+        spriteAnimator.PlayAnimation(stateName);
+    }
+
+    // Traduit un Vector2 en nom de direction (Zelda-like)
+    string GetDirectionName(Vector2 dir)
+    {
+        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        {
+            return dir.x > 0 ? "Right" : "Left";
+        }
+        else
+        {
+            return dir.y > 0 ? "Up" : "Down";
         }
     }
 
     void FixedUpdate()
     {
-        // 4. Application du mouvement physique (recommandé pour Rigidbody2D)
         rb.MovePosition(rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

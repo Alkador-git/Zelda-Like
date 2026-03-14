@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,10 +162,10 @@ TextureImporter:
       name: Face anime-sheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 32
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b48d9e5705c0e429a7c8809c8ecd92
+      spriteID: bef09713af3f8774b81dfac630814689
       internalID: 3877695152058480562
       vertices: []
       indices: 
@@ -184,10 +184,10 @@ TextureImporter:
       name: Face anime-sheet_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
         width: 32
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35938cbf9170e5d4187576aab2764aba
+      spriteID: b09876cae0d4ea1479f506f408e3fa0c
       internalID: -2697937188288620236
       vertices: []
       indices: 
@@ -206,10 +206,10 @@ TextureImporter:
       name: Face anime-sheet_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
         width: 32
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d53635b130af16468bd312dce73bf87
+      spriteID: cd984dba98a17cd4baa4c1d7886c91e8
       internalID: -6302394776468752620
       vertices: []
       indices: 
@@ -228,10 +228,10 @@ TextureImporter:
       name: Face anime-sheet_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 0
         width: 32
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,7 +240,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b3eccd5c1746ae42ad9ec36de8d50e4
+      spriteID: bb661a184305a6645a8b7b258df1eb57
       internalID: 8098755798690837894
       vertices: []
       indices: 
@@ -250,10 +250,10 @@ TextureImporter:
       name: Face anime-sheet_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
         width: 32
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,162 +262,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1722169f7370a940905d6bd47de1c43
+      spriteID: 5749a9bdaaba13247bd33b4a588c7d48
       internalID: 1890208308388298127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_5
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f32fa1e51f57a74f8fab76e87aed13a
-      internalID: 7085001557588280808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0632a91b05e7a0d40bcaf40b54ecdbc8
-      internalID: -3117018654250487279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5154d892e97cc94db029b3334e84022
-      internalID: -985943163367720947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_8
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17f560cb63e5ad046b767f96f5e12313
-      internalID: 6515280214624077999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_9
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9aa9daf1278bfa4a8b13f345a8deaec
-      internalID: -2418029648143852087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_10
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ad3fdd7814a7f248a2e844eb781b34c
-      internalID: -2233450421796261324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Face anime-sheet_11
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 0
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4a93fceb315c204faaebe753b27b820
-      internalID: -5019612551770461628
       vertices: []
       indices: 
       edges: []
@@ -438,20 +284,13 @@ TextureImporter:
       - key: SpriteEditor.SliceOnImport
         value: True
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":true,"gridCellCount":{"x":12.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":34.0},"gridSpriteOffset":{"x":1.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Face anime-sheet_0: 3877695152058480562
       Face anime-sheet_1: -2697937188288620236
-      Face anime-sheet_10: -2233450421796261324
-      Face anime-sheet_11: -5019612551770461628
       Face anime-sheet_2: -6302394776468752620
       Face anime-sheet_3: 8098755798690837894
       Face anime-sheet_4: 1890208308388298127
-      Face anime-sheet_5: 7085001557588280808
-      Face anime-sheet_6: -3117018654250487279
-      Face anime-sheet_7: -985943163367720947
-      Face anime-sheet_8: 6515280214624077999
-      Face anime-sheet_9: -2418029648143852087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,13 +5,16 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-    public SpriteAnimator spriteAnimator; // Référence au nouveau script
+    public SpriteAnimator spriteAnimator;
 
     private Vector2 _movement;
-    private Vector2 _lastDirection = Vector2.down; // Regard vers le bas par défaut
+    private Vector2 _lastDirection = Vector2.down;
+    private bool _isAttacking = false;
 
     void Update()
     {
+        if (_isAttacking) return; // Bloque le mouvement pendant l'attaque
+
         Vector2 rawInput = Vector2.zero;
         if (Keyboard.current != null)
         {
@@ -22,41 +25,37 @@ public class PlayerController : MonoBehaviour
         }
 
         _movement = rawInput.normalized;
-        UpdateAnimationState();
+
+        UpdateAnimation();
     }
 
-    void UpdateAnimationState()
+    private void UpdateAnimation()
     {
-        string stateName = "";
-
         if (_movement.magnitude > 0.1f)
         {
             _lastDirection = _movement;
-            stateName = "Walk" + GetDirectionName(_movement);
+            spriteAnimator.PlayAnimation("Walk" + GetDirectionName(_movement));
         }
         else
         {
-            stateName = "Idle" + GetDirectionName(_lastDirection);
+            spriteAnimator.PlayAnimation("Idle" + GetDirectionName(_lastDirection));
         }
-
-        spriteAnimator.PlayAnimation(stateName);
     }
 
-    // Traduit un Vector2 en nom de direction (Zelda-like)
-    string GetDirectionName(Vector2 dir)
+    public string GetLastDirectionName() => GetDirectionName(_lastDirection);
+
+    private string GetDirectionName(Vector2 dir)
     {
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
-        {
             return dir.x > 0 ? "Right" : "Left";
-        }
-        else
-        {
-            return dir.y > 0 ? "Up" : "Down";
-        }
+        return dir.y > 0 ? "Up" : "Down";
     }
+
+    public void SetAttacking(bool attacking) => _isAttacking = attacking;
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
+        if (!_isAttacking)
+            rb.MovePosition(rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 470bb2cee99c50245a1220f87dd67dd9
+guid: 2d4ad848c53931f48a588ed4065e3286
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5028390955775220757
-    second: Zelda like chara_0
+      213: -1389455718105613232
+    second: Zelda like chara cote_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.4375, y: 0.5}
+  spritePivot: {x: 0.5, y: 0.46875}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zelda like chara_0
+      name: Zelda like chara cote_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be32b393111973ab0800000000000000
-      internalID: -5028390955775220757
+      spriteID: 05cfd23d269a7bce0800000000000000
+      internalID: -1389455718105613232
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Zelda like chara_0: -5028390955775220757
+      Zelda like chara cote_0: -1389455718105613232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

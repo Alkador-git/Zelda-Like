@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 74423d835ab371547b310d9740f0584d
+guid: 2be6bd78ac335d740b3749c3856709a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5551542718621090948
-    second: Temple_wall_0
+      213: 2326327228197828909
+    second: Temple_wall_angle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temple_wall_0
+      name: Temple_wall_angle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48401d270ba0b0d40800000000000000
-      internalID: 5551542718621090948
+      spriteID: d29fc04e946c84020800000000000000
+      internalID: 2326327228197828909
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Temple_wall_0: 5551542718621090948
+      Temple_wall_angle_0: 2326327228197828909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,9 +11,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 _lastDirection = Vector2.down;
     private bool _isAttacking = false;
 
+    // Gère l'entrée du joueur et met à jour l'animation
     void Update()
     {
-        if (_isAttacking) return; // Bloque le mouvement pendant l'attaque
+        if (_isAttacking) return;
 
         Vector2 rawInput = Vector2.zero;
         if (Keyboard.current != null)
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
         UpdateAnimation();
     }
 
+    // Met à jour l'animation selon le mouvement ou l'inactivité
     private void UpdateAnimation()
     {
         if (_movement.magnitude > 0.1f)
@@ -42,8 +44,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Retourne le nom de la dernière direction
     public string GetLastDirectionName() => GetDirectionName(_lastDirection);
 
+    // Convertit un vecteur en direction (Up, Down, Left, Right)
     private string GetDirectionName(Vector2 dir)
     {
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
@@ -51,8 +55,10 @@ public class PlayerController : MonoBehaviour
         return dir.y > 0 ? "Up" : "Down";
     }
 
+    // Définit l'état d'attaque du joueur
     public void SetAttacking(bool attacking) => _isAttacking = attacking;
 
+    // Applique le mouvement au joueur
     void FixedUpdate()
     {
         if (!_isAttacking)

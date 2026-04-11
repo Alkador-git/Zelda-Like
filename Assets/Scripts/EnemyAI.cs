@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     private bool _isBeingHit = false;
     private float _hitTimer;
 
+    // Initialise l'ennemi et cherche le joueur
     void Start()
     {
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -35,6 +36,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // Gère le comportement de l'ennemi : poursuite ou attaque
     void Update()
     {
         if (_isBeingHit)
@@ -67,6 +69,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // Reçoit les dommages et active l'état de choc
     public void OnTakeDamage(float current, float max)
     {
         _isBeingHit = true;
@@ -74,12 +77,14 @@ public class EnemyAI : MonoBehaviour
         _movement = Vector2.zero;
     }
 
+    // Applique le mouvement à l'ennemi
     void FixedUpdate()
     {
         if (_isBeingHit) return;
         rb.MovePosition(rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    // Met à jour l'animation et la direction de l'ennemi
     void UpdateAnimation(string state)
     {
         if (_movement.magnitude > 0)
@@ -93,6 +98,7 @@ public class EnemyAI : MonoBehaviour
         spriteAnimator.PlayAnimation(state + _currentDir);
     }
 
+    // Inflige des dégâts au joueur
     void AttackPlayer()
     {
         _nextAttackTime = Time.time + attackCooldown;

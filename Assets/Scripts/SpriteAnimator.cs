@@ -20,13 +20,15 @@ public class SpriteAnimator : MonoBehaviour
     private float _timer;
     private bool _isDone;
 
+    // Initialise le SpriteRenderer et lance l'animation par défaut
     private void Start()
     {
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
- 
+
         PlayAnimation("IdleDown");
     }
 
+    // Gère l'avancement des frames de l'animation
     private void Update()
     {
         if (_isDone || _currentAnim.frames == null || _currentAnim.frames.Count == 0) return;
@@ -55,6 +57,7 @@ public class SpriteAnimator : MonoBehaviour
         }
     }
 
+    // Lance une animation par son nom
     public void PlayAnimation(string animName)
     {
         if (_currentAnim.name == animName) return;

@@ -11,6 +11,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public int damage = 1;
 
+    // Détecte l'appui sur la barre d'espace pour attaquer
     void Update()
     {
 
@@ -20,18 +21,16 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    // Effectue une attaque du joueur
     private IEnumerator PerformAttack()
     {
         controller.SetAttacking(true);
 
-        // Joue l'animation d'attaque selon la direction (ex: AttackUp)
         string dir = controller.GetLastDirectionName();
         spriteAnimator.PlayAnimation("Attack" + dir);
 
-        // Oriente le point d'attaque vers la direction du joueur
         OrientAttackPoint(dir);
 
-        // Détection des ennemis
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -42,12 +41,12 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-        // Temps d'attente pour laisser l'animation se finir (à ajuster)
         yield return new WaitForSeconds(0.3f);
 
         controller.SetAttacking(false);
     }
 
+    // Oriente le point d'attaque selon la direction
     private void OrientAttackPoint(string direction)
     {
         switch (direction)
@@ -67,6 +66,7 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    // Affiche le rayon d'attaque dans l'éditeur
     void OnDrawGizmosSelected()
     {
         if (attackPoint != null) Gizmos.DrawWireSphere(attackPoint.position, attackRange);

@@ -15,6 +15,7 @@ public class HealthUI : MonoBehaviour
 
     private List<Image> _hearts = new List<Image>();
 
+    // Initialise l'affichage de la santé
     void Start()
     {
         if (playerHealth != null)
@@ -25,6 +26,7 @@ public class HealthUI : MonoBehaviour
         }
     }
 
+    // Crée les coeurs visuels pour afficher la santé
     void InitializeHearts()
     {
         foreach (Transform child in transform) Destroy(child.gameObject);
@@ -40,6 +42,7 @@ public class HealthUI : MonoBehaviour
         }
     }
 
+    // Met à jour l'affichage des coeurs selon la santé actuelle
     public void UpdateHearts(float currentHealth, float maxHealth)
     {
         for (int i = 0; i < _hearts.Count; i++)

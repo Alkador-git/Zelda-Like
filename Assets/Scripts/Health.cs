@@ -9,18 +9,22 @@ public class Health : MonoBehaviour
     public UnityEvent<float, float> onHealthChanged;
     public UnityEvent onDeath;
 
+    // Initialise la santé au maximum
     private void Awake()
     {
         _currentHealth = maxHealth;
     }
 
+    // Notifie les observateurs de la santé initiale
     private void Start()
     {
         onHealthChanged?.Invoke(_currentHealth, maxHealth);
     }
 
+    // Retourne la santé maximale
     public float GetMaxHealth() => maxHealth;
 
+    // Réduit la santé et appelle Die si nécessaire
     public void TakeDamage(float amount)
     {
         _currentHealth -= amount;
@@ -31,6 +35,7 @@ public class Health : MonoBehaviour
         if (_currentHealth <= 0f) Die();
     }
 
+    // Gère la mort de l'entité
     private void Die()
     {
         onDeath?.Invoke();
